@@ -1,7 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_web_view.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -74,18 +74,12 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 200.0,
-                  child: custom_widgets.RTSPStreamWidget(
-                    width: double.infinity,
-                    height: 200.0,
-                    url:
-                        ' rtsp://b03773d78e34.entrypoint.cloud.wowza.com:1935/app-4065XT4Z/80c76e59_stream1',
-                  ),
-                ),
+              FlutterFlowWebView(
+                content: 'http://10.10.19.11:5000/cameras/Eingang',
+                bypass: false,
+                height: 500.0,
+                verticalScroll: false,
+                horizontalScroll: false,
               ),
             ],
           ),
