@@ -75,7 +75,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               FlutterFlowWebView(
-                content: 'http://10.10.19.11:5000/cameras/Eingang',
+                content:
+                    'http://10.10.19.11:5000/live/webrtc/webrtc.html?src=rtsp_cam_2',
                 bypass: false,
                 height: 500.0,
                 verticalScroll: false,
